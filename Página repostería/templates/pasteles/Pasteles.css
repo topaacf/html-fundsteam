@@ -1,0 +1,99 @@
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: flex-start;   
+font-family: 'Segoe UI', Arial, sans-serif;
+
+background-image: url('../../imgs/fondomain.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+backdrop-filter: blur(5px);
+}
+header {
+    background-color: #ffc8dd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #660334;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #7e5a8b;
+}
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(40,40,80,0.7), rgba(40,40,80,0.7)), url('imgs/fondomain.jpg') center/cover no-repeat;
+    padding: 16px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #e0e0e0;
+}
+
+.main-nav a.active::after,
+.main-nav a:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #f8b4d9;
+}
